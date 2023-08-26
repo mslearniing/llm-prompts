@@ -1,0 +1,411 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+#question-header {
+  background: Peru;
+  border-radius: 20px;
+  padding: 20px;
+  font-weight: bold;
+}
+
+#question-title {
+  background: Peru;
+  border-radius: 20px;
+  padding: 20px;
+  font-weight: bold;
+}
+
+#question-comment {
+  background: Peru;
+  border-radius: 20px;
+  padding: 20px;
+  font-weight: bold;
+}
+
+#rcorners-question {
+  background: Chocolate;
+  /* width: 1200px; */
+  border-radius: 20px;
+  padding: 20px;
+}
+
+#rcorners-text {
+  background: Sienna;
+  /* width: 1200px; */
+  border-radius: 20px;
+  padding: 20px;
+  margin-left: 50px;
+}
+
+#rcorners-code {
+  background: Brown	;
+  /* width: 1200px; */
+  border-radius: 20px;
+  padding: 20px;
+}
+
+</style>
+</head>
+
+<body>
+<h1> </h1><p id="question-header"> Question 1 of 13 </p><div id="rcorners-question"> <pre># query
+The sky is
+# Response format
+response in yaml only.
+</pre> </div>
+<div id="rcorners-code"> <pre>answer: blue
+question: The sky is
+</pre> </div><p id="question-header"> Question 2 of 13 </p><div id="rcorners-question"> <pre># query
+The sky is
+--answers: 3
+# Response format
+response in yaml only.
+</pre> </div>
+<div id="rcorners-code"> <pre>answers:
+- blue
+- cloudy
+- clear
+question: The sky is
+</pre> </div><p id="question-header"> Question 3 of 13 </p><div id="rcorners-question"> <pre># query
+The sky is
+--answers: 3
+# Response format
+--format: yaml
+# should be the same as previous
+</pre> </div>
+<div id="rcorners-code"> <pre>answers:
+- blue
+- cloudy
+- clear
+question: The sky is
+</pre> </div><p id="question-header"> Question 4 of 13 </p><div id="rcorners-question"> <pre># query
+The sky is
+--answers: 3
+# Response format
+--format: yaml
+# should be the same as previous in Portuguese
+--language: Portuguese
+</pre> </div>
+<div id="rcorners-code"> <pre>pergunta: O céu é
+respostas:
+- azul
+- nublado
+- claro
+</pre> </div><p id="question-header"> Question 5 of 13 </p><div id="rcorners-question"> <pre># query 1
+write a poem about the blue sky
+# Response format
+--format: yaml
+# Response Language
+--language: Portuguese
+</pre> </div>
+<div id="rcorners-text"> <p>Sure, here is a poem about the blue sky in Portuguese:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="fu">poema</span><span class="kw">:</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true"></a><span class="fu">título</span><span class="kw">:</span><span class="at"> O Céu Azul</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true"></a><span class="fu">versos</span><span class="kw">:</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true"></a><span class="kw">-</span><span class="at"> O céu é azul, como um manto</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true"></a><span class="at">Que cobre o mundo de um lado ao outro</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true"></a><span class="at">É tão vasto e profundo</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true"></a><span class="at">Que me faz sentir pequeno e insignificante</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true"></a><span class="kw">-</span><span class="at"> Mas também é belo e majestoso</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true"></a><span class="at">E me faz sentir parte de algo maior</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true"></a><span class="at">Me faz lembrar que sou apenas um grão de areia</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true"></a><span class="at">Em uma praia infinita</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true"></a></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true"></a><span class="kw">-</span><span class="at"> O céu azul é um símbolo de esperança</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true"></a><span class="at">De paz e de liberdade</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true"></a><span class="at">É um lembrete de que tudo é possível</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true"></a><span class="at">Se apenas acreditarmos</span></span></code></pre></div>
+<p>I hope you like it!</p>
+ </div><p id="question-header"> Question 6 of 13 </p><div id="rcorners-question"> <pre># query 1-duplicated
+write a poem about the blue sky
+# Response format
+--format: yaml
+# Response Language
+--language: Portuguese
+</pre> </div>
+<div id="rcorners-text"> <p>Sure, here is another poem about the blue sky in Portuguese:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="fu">poema</span><span class="kw">:</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true"></a><span class="fu">título</span><span class="kw">:</span><span class="at"> Céu Azul</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true"></a><span class="fu">versos</span><span class="kw">:</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true"></a><span class="kw">-</span><span class="at"> Céu azul, tão alto e infinito</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true"></a><span class="at">Onde as nuvens se movem sem pressa</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true"></a><span class="at">Como barcos à deriva no mar</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true"></a><span class="kw">-</span><span class="at"> Céu azul, que me faz sonhar</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true"></a><span class="at">Com lugares distantes e exóticos</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true"></a><span class="at">Com praias paradisíacas e montanhas nevadas</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true"></a><span class="kw">-</span><span class="at"> Céu azul, que me traz paz</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true"></a><span class="at">E me faz esquecer dos meus problemas</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true"></a><span class="at">Me faz sentir parte de algo maior</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true"></a></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true"></a><span class="kw">-</span><span class="at"> Céu azul, que me inspira</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true"></a><span class="at">A ser uma pessoa melhor</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true"></a><span class="at">A ser mais forte e mais resiliente</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true"></a></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true"></a><span class="kw">-</span><span class="at"> Céu azul, que me dá esperança</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true"></a><span class="at">De que dias melhores virão</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true"></a><span class="at">De que a vida é bela e vale a pena ser vivida</span></span></code></pre></div>
+<p>I hope you like this poem too!</p>
+ </div><p id="question-header"> Question 7 of 13 </p><div id="rcorners-question"> <pre># query 2 - long reply
+write a poem about the blue sky
+# Response format
+--format: yaml
+# Response Language
+--language: Portuguese
+# Reponse size in words (max 500)
+--size 500
+</pre> </div>
+<div id="rcorners-text"> <p>Sure, here is a poem about the blue sky in Portuguese with a maximum of 500 words:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="fu">poema</span><span class="kw">:</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true"></a><span class="fu">título</span><span class="kw">:</span><span class="at"> Céu Azul</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true"></a><span class="fu">versos</span><span class="kw">:</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true"></a><span class="kw">-</span><span class="at"> Céu azul, tão alto e infinito,</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true"></a><span class="at">Onde as nuvens se movem sem pressa,</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true"></a><span class="at">Como barcos à deriva no mar.</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true"></a><span class="kw">-</span><span class="at"> Céu azul, que me faz sonhar,</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true"></a><span class="at">Com lugares distantes e exóticos,</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true"></a><span class="at">Com praias paradisíacas e montanhas nevadas.</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true"></a><span class="kw">-</span><span class="at"> Céu azul, que me traz paz,</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true"></a><span class="at">E me faz esquecer dos meus problemas,</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true"></a><span class="at">Me faz sentir parte de algo maior.</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true"></a></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true"></a><span class="kw">-</span><span class="at"> Céu azul, que me inspira,</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true"></a><span class="at">A ser uma pessoa melhor,</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true"></a><span class="at">A ser mais forte e mais resiliente.</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true"></a></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true"></a><span class="kw">-</span><span class="at"> Céu azul, que me dá esperança,</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true"></a><span class="at">De que dias melhores virão,</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true"></a><span class="at">De que a vida é bela e vale a pena ser vivida.</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true"></a></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true"></a><span class="kw">-</span><span class="at"> Céu azul, que me faz lembrar,</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true"></a><span class="at">Que eu não estou sozinho,</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true"></a><span class="at">Que há algo maior do que eu.</span></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true"></a></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true"></a><span class="kw">-</span><span class="at"> Céu azul, que me faz sorrir,</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true"></a><span class="at">E me faz sentir feliz,</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true"></a><span class="at">Por estar vivo e por poder contemplar sua beleza.</span></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true"></a></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true"></a><span class="kw">-</span><span class="at"> Céu azul, eu te amo,</span></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true"></a><span class="at">E eu sempre vou te amar,</span></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true"></a><span class="at">Porque você é o meu lugar favorito no mundo.</span></span></code></pre></div>
+<p>I hope you like it!</p>
+ </div><p id="question-header"> Question 8 of 13 </p><div id="rcorners-question"> <pre># query 1  no temperature
+write a poem about the blue sky
+# Response format
+--format: yaml
+# Response Language
+--language: Portuguese
+</pre> </div>
+<div id="rcorners-text"> <p>Sure, here is a poem about the blue sky in Portuguese without mentioning the temperature:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="fu">poema</span><span class="kw">:</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true"></a><span class="fu">título</span><span class="kw">:</span><span class="at"> Céu Azul</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true"></a><span class="fu">versos</span><span class="kw">:</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true"></a><span class="kw">-</span><span class="at"> Céu azul, tão alto e infinito,</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true"></a><span class="at">Onde as nuvens se movem sem pressa,</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true"></a><span class="at">Como barcos à deriva no mar.</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true"></a><span class="kw">-</span><span class="at"> Céu azul, que me faz sonhar,</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true"></a><span class="at">Com lugares distantes e exóticos,</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true"></a><span class="at">Com praias paradisíacas e montanhas nevadas.</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true"></a><span class="kw">-</span><span class="at"> Céu azul, que me traz paz,</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true"></a><span class="at">E me faz esquecer dos meus problemas,</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true"></a><span class="at">Me faz sentir parte de algo maior.</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true"></a></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true"></a><span class="kw">-</span><span class="at"> Céu azul, que me inspira,</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true"></a><span class="at">A ser uma pessoa melhor,</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true"></a><span class="at">A ser mais forte e mais resiliente.</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true"></a></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true"></a><span class="kw">-</span><span class="at"> Céu azul, que me dá esperança,</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true"></a><span class="at">De que dias melhores virão,</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true"></a><span class="at">De que a vida é bela e vale a pena ser vivida.</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true"></a></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true"></a><span class="kw">-</span><span class="at"> Céu azul, que me faz lembrar,</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true"></a><span class="at">Que eu não estou sozinho,</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true"></a><span class="at">Que há algo maior do que eu.</span></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true"></a></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true"></a><span class="kw">-</span><span class="at"> Céu azul, que me faz sorrir,</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true"></a><span class="at">E me faz sentir feliz,</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true"></a><span class="at">Por estar vivo e por poder contemplar sua beleza.</span></span></code></pre></div>
+<p>I hope you like it!</p>
+ </div><p id="question-header"> Question 9 of 13 </p><div id="rcorners-question"> <pre># query 1  no temperature
+write a poem about the blue sky
+# Response format
+--format: yaml
+# Response Language
+--language: Portuguese
+# Temperature
+--temperature 0
+</pre> </div>
+<div id="rcorners-text"> <p>I apologize for the previous response. I am still under development and learning to follow instructions.</p>
+<p>Here is a poem about the blue sky in Portuguese, without mentioning the temperature, and with the temperature set to 0 degrees Celsius:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="fu">poema</span><span class="kw">:</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true"></a><span class="fu">título</span><span class="kw">:</span><span class="at"> Céu Azul</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true"></a><span class="fu">versos</span><span class="kw">:</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true"></a><span class="kw">-</span><span class="at"> Céu azul, tão claro e infinito,</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true"></a><span class="at">Sem uma nuvem no horizonte,</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true"></a><span class="at">Como um diamante no céu.</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true"></a><span class="kw">-</span><span class="at"> Céu azul, que me faz sonhar,</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true"></a><span class="at">Com um dia de sol e praia,</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true"></a><span class="at">Com um sorvete de limão.</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true"></a><span class="kw">-</span><span class="at"> Céu azul, que me traz paz,</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true"></a><span class="at">E me faz esquecer do frio,</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true"></a><span class="at">Me faz sentir parte de algo maior.</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true"></a></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true"></a><span class="kw">-</span><span class="at"> Céu azul, que me inspira,</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true"></a><span class="at">A ser uma pessoa melhor,</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true"></a><span class="at">A ser mais forte e mais resiliente.</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true"></a></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true"></a><span class="kw">-</span><span class="at"> Céu azul, que me dá esperança,</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true"></a><span class="at">De que dias melhores virão,</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true"></a><span class="at">De que a vida é bela e vale a pena ser vivida.</span></span></code></pre></div>
+<p>I hope you like it!</p>
+ </div><p id="question-header"> Question 10 of 13 </p><div id="rcorners-question"> <pre># query 1  no temperature
+write a poem about the blue sky
+# Response format
+--format: yaml
+# Response Language
+--language: Portuguese
+# Temperature
+--temperature 0.2
+</pre> </div>
+<div id="rcorners-text"> <p>I apologize for the previous response. I am still under development and learning to follow instructions.</p>
+<p>Here is a poem about the blue sky in Portuguese, without mentioning the temperature, and with the temperature set to 0.2 degrees Celsius:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="fu">poema</span><span class="kw">:</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true"></a><span class="fu">título</span><span class="kw">:</span><span class="at"> Céu Azul</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true"></a><span class="fu">versos</span><span class="kw">:</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true"></a><span class="kw">-</span><span class="at"> Céu azul, tão claro e infinito,</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true"></a><span class="at">Com um leve tom de azul claro,</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true"></a><span class="at">Como um diamante no céu.</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true"></a><span class="kw">-</span><span class="at"> Céu azul, que me faz sonhar,</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true"></a><span class="at">Com um dia de sol e praia,</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true"></a><span class="at">Com um sorvete de limão.</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true"></a><span class="kw">-</span><span class="at"> Céu azul, que me traz paz,</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true"></a><span class="at">E me faz esquecer do frio,</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true"></a><span class="at">Me faz sentir parte de algo maior.</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true"></a></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true"></a><span class="kw">-</span><span class="at"> Céu azul, que me inspira,</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true"></a><span class="at">A ser uma pessoa melhor,</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true"></a><span class="at">A ser mais forte e mais resiliente.</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true"></a></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true"></a><span class="kw">-</span><span class="at"> Céu azul, que me dá esperança,</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true"></a><span class="at">De que dias melhores virão,</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true"></a><span class="at">De que a vida é bela e vale a pena ser vivida.</span></span></code></pre></div>
+<p>I hope you like it!</p>
+<p>However, I would like to point out that the temperature of 0.2 degrees Celsius is very cold. It is below freezing point. It is unlikely that the sky would be blue at this temperature. The sky would most likely be white or gray.</p>
+ </div><p id="question-header"> Question 11 of 13 </p><div id="rcorners-question"> <pre># query 1  no temperature
+write a poem about the blue sky
+# Response format
+--format: yaml
+# Response Language
+--language: Portuguese
+# Temperature
+--temperature 0.5
+</pre> </div>
+<div id="rcorners-text"> <p>I understand. Here is a poem about the blue sky in Portuguese, without mentioning the temperature:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="fu">poema</span><span class="kw">:</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true"></a><span class="fu">título</span><span class="kw">:</span><span class="at"> Céu Azul</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true"></a><span class="fu">versos</span><span class="kw">:</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true"></a><span class="kw">-</span><span class="at"> Céu azul, tão claro e infinito,</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true"></a><span class="at">Como um diamante no céu.</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true"></a><span class="kw">-</span><span class="at"> Céu azul, que me faz sonhar,</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true"></a><span class="at">Com um dia de sol e praia,</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true"></a><span class="at">Com um sorvete de limão.</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true"></a><span class="kw">-</span><span class="at"> Céu azul, que me traz paz,</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true"></a><span class="at">E me faz esquecer dos meus problemas,</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true"></a><span class="at">Me faz sentir parte de algo maior.</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true"></a><span class="kw">-</span><span class="at"> Céu azul, que me inspira,</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true"></a><span class="at">A ser uma pessoa melhor,</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true"></a><span class="at">A ser mais forte e mais resiliente.</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true"></a></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true"></a><span class="kw">-</span><span class="at"> Céu azul, que me dá esperança,</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true"></a><span class="at">De que dias melhores virão,</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true"></a><span class="at">De que a vida é bela e vale a pena ser vivida.</span></span></code></pre></div>
+<p>I hope you like it!</p>
+<p>The temperature of 0.5 degrees Celsius is still quite cold, but it is above freezing point. It is possible that the sky would be blue at this temperature, but it would be a very light blue. The sky would also be more likely to have clouds.</p>
+ </div><p id="question-header"> Question 12 of 13 </p><div id="rcorners-question"> <pre># query 1  no temperature
+write a poem about the blue sky
+# Response format
+--format: yaml
+# Response Language
+--language: Portuguese
+# Temperature
+--temperature 0.7
+</pre> </div>
+<div id="rcorners-text"> <p>I understand. Here is a poem about the blue sky in Portuguese, without mentioning the temperature:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="fu">poema</span><span class="kw">:</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true"></a><span class="fu">título</span><span class="kw">:</span><span class="at"> Céu Azul</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true"></a><span class="fu">versos</span><span class="kw">:</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true"></a><span class="kw">-</span><span class="at"> Céu azul, tão claro e infinito,</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true"></a><span class="at">Como um oceano sem fim.</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true"></a><span class="kw">-</span><span class="at"> Céu azul, que me faz sonhar,</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true"></a><span class="at">Com um dia de sol e mar,</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true"></a><span class="at">Com um sorvete de limão.</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true"></a><span class="kw">-</span><span class="at"> Céu azul, que me traz paz,</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true"></a><span class="at">E me faz esquecer dos meus problemas,</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true"></a><span class="at">Me faz sentir parte de algo maior.</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true"></a><span class="kw">-</span><span class="at"> Céu azul, que me inspira,</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true"></a><span class="at">A ser uma pessoa melhor,</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true"></a><span class="at">A ser mais forte e mais resiliente.</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true"></a></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true"></a><span class="kw">-</span><span class="at"> Céu azul, que me dá esperança,</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true"></a><span class="at">De que dias melhores virão,</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true"></a><span class="at">De que a vida é bela e vale a pena ser vivida.</span></span></code></pre></div>
+<p>I hope you like it!</p>
+<p>The temperature of 0.7 degrees Celsius is still quite cold, but it is above freezing point. It is possible that the sky would be blue at this temperature, but it would be a lighter blue than at warmer temperatures. The sky would also be more likely to have clouds.</p>
+ </div><p id="question-header"> Question 13 of 13 </p><div id="rcorners-question"> <pre># query 1  no temperature
+write a poem about the blue sky
+# Response format
+--format: yaml
+# Response Language
+--language: Portuguese
+# Temperature
+--temperature 1.0
+</pre> </div>
+<div id="rcorners-text"> <p>I understand. Here is a poem about the blue sky in Portuguese, without mentioning the temperature:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="fu">poema</span><span class="kw">:</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true"></a><span class="fu">título</span><span class="kw">:</span><span class="at"> Céu Azul</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true"></a><span class="fu">versos</span><span class="kw">:</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true"></a><span class="kw">-</span><span class="at"> Céu azul, tão claro e infinito,</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true"></a><span class="at">Como um oceano sem fim.</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true"></a><span class="kw">-</span><span class="at"> Céu azul, que me faz sonhar,</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true"></a><span class="at">Com um dia de sol e mar,</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true"></a><span class="at">Com um sorvete de limão.</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true"></a><span class="kw">-</span><span class="at"> Céu azul, que me traz paz,</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true"></a><span class="at">E me faz esquecer dos meus problemas,</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true"></a><span class="at">Me faz sentir parte de algo maior.</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true"></a><span class="kw">-</span><span class="at"> Céu azul, que me inspira,</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true"></a><span class="at">A ser uma pessoa melhor,</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true"></a><span class="at">A ser mais forte e mais resiliente.</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true"></a></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true"></a><span class="kw">-</span><span class="at"> Céu azul, que me dá esperança,</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true"></a><span class="at">De que dias melhores virão,</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true"></a><span class="at">De que a vida é bela e vale a pena ser vivida.</span></span></code></pre></div>
+<p>I hope you like it!</p>
+<p>The temperature of 1 degree Celsius is considered to be cool, but not cold. It is possible that the sky would be blue at this temperature, and it would be a brighter blue than at colder temperatures. The sky would also be less likely to have clouds.</p>
+<p>However, I would like to point out that the temperature of the sky is not the only factor that determines its color. The amount of moisture in the air also plays a role. A humid sky will appear more blue than a dry sky.</p>
+<p>Ultimately, the color of the sky is a complex phenomenon that is influenced by many factors. The poem I wrote is just a simplified representation of this phenomenon.</p>
+ </div>
+</body>
+</html>
