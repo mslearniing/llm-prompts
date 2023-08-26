@@ -1,0 +1,75 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+#question-header {
+  background: Peru;
+  border-radius: 20px;
+  padding: 20px;
+  font-weight: bold;
+}
+
+#question-title {
+  background: Peru;
+  border-radius: 20px;
+  padding: 20px;
+  font-weight: bold;
+}
+
+#question-comment {
+  background: Peru;
+  border-radius: 20px;
+  padding: 20px;
+  font-weight: bold;
+}
+
+#rcorners-question {
+  background: Chocolate;
+  /* width: 1200px; */
+  border-radius: 20px;
+  padding: 20px;
+}
+
+#rcorners-text {
+  background: Sienna;
+  /* width: 1200px; */
+  border-radius: 20px;
+  padding: 20px;
+  margin-left: 50px;
+}
+
+#rcorners-code {
+  background: Brown	;
+  /* width: 1200px; */
+  border-radius: 20px;
+  padding: 20px;
+}
+
+</style>
+</head>
+
+<body>
+<h1> </h1><p id="question-header"> Question 1 of 1 </p><div id="rcorners-question"> <pre>def is_valid_yaml(content): """Checks if the content is valid YAML.
+This function takes a string of YAML content as input and returns `True` if the content is valid YAML, or `False` otherwise.
+Args: content: The string of YAML content to be checked.
+Returns: `True` if the content is valid YAML, `False` otherwise.
+Raises: ValueError: If the content is not valid YAML. """
+try: yaml.safe_load(content) x = 5 return True except yaml.YAMLError as e: raise ValueError(f"{e}") </pre> </div>
+<div id="rcorners-text"> <p>The code you provided successfully checks if the content is valid YAML. It raises a <code>ValueError</code> exception if the content is not valid YAML.</p>
+<p>The <code>yaml.safe_load()</code> function takes a string of YAML content as input and returns an object if the content is valid YAML. If the content is not valid YAML, the function raises a <code>YAMLError</code> exception.</p>
+<p>In the code, we first try to call the <code>yaml.safe_load()</code> function with the content as input. If the function returns an object, then the content is valid YAML and we return <code>True</code>. Otherwise, we know that the content is not valid YAML and we raise a <code>ValueError</code> exception with the error message from the <code>YAMLError</code> exception.</p>
+<p>Here is an example of how to use the code:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a>content <span class="op">=</span> <span class="st">&quot;&quot;&quot;</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true"></a><span class="st">name: John Doe</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true"></a><span class="st">age: 30</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true"></a><span class="st">&quot;&quot;&quot;</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true"></a>is_valid_yaml(content)</span></code></pre></div>
+<p>This code will return <code>True</code> because the content is valid YAML.</p>
+<p>I hope this helps! Let me know if you have any other questions.</p>
+ </div>
+</body>
+</html>
